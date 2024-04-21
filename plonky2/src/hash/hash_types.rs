@@ -1,9 +1,7 @@
 #[cfg(not(feature = "std"))]
 use alloc::vec::Vec;
-
 use anyhow::ensure;
 use serde::{Deserialize, Deserializer, Serialize, Serializer};
-
 use crate::field::goldilocks_field::GoldilocksField;
 use crate::field::types::{Field, PrimeField64, Sample};
 use crate::hash::poseidon::Poseidon;
